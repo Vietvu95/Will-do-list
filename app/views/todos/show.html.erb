@@ -1,0 +1,13 @@
+<h1><%= @todo.title %></h1>
+
+<p>
+  <strong>Status:</strong>
+  <%= @todo.completed ? "Completed" : "Incomplete" %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @todo.description %>
+</p>
+
+<%= link_to "Back", todos_path %>
