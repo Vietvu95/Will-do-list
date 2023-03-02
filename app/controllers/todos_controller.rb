@@ -10,6 +10,7 @@ class TodosController < ApplicationController
 
   def new
     @todo = Todo.new
+    render :new, locals: { task: @task }
   end
 
   def edit
